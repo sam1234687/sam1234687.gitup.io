@@ -1,34 +1,29 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
 body {
-    line-height: 1.6;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
 }
 
 /* Navbar */
 header {
     background: #333;
     color: white;
-    padding: 15px 0;
+    padding: 10px 0;
 }
 
 nav {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
 }
 
 nav ul {
-    display: flex;
     list-style: none;
+    display: flex;
 }
 
 nav ul li {
-    margin-left: 20px;
+    margin: 0 10px;
 }
 
 nav ul li a {
@@ -36,61 +31,39 @@ nav ul li a {
     text-decoration: none;
 }
 
-/* Hero */
-.hero {
-    height: 90vh;
-    background: linear-gradient(to right, #4facfe, #00f2fe);
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.hero span {
-    color: yellow;
-}
-
-.hero button {
-    margin-top: 15px;
-    padding: 10px 20px;
-    border: none;
-    background: black;
-    color: white;
-    cursor: pointer;
-}
-
 /* Sections */
 section {
-    padding: 50px;
+    padding: 60px 20px;
     text-align: center;
+}
+
+/* Home */
+#home {
+    background: #007BFF;
+    color: white;
 }
 
 /* Projects */
 .project-card {
-    background: #f4f4f4;
-    margin: 15px auto;
-    padding: 20px;
-    width: 60%;
+    background: white;
+    margin: 10px auto;
+    padding: 15px;
+    width: 80%;
     border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 /* Contact */
-form {
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-    margin: auto;
-}
-
-form input, form textarea {
+input, textarea {
+    width: 80%;
+    padding: 10px;
     margin: 10px 0;
-    padding: 10px;
 }
 
-form button {
-    background: #333;
+button {
+    padding: 10px 20px;
+    background: #007BFF;
     color: white;
-    padding: 10px;
     border: none;
+    cursor: pointer;
 }
