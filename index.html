@@ -21,45 +21,45 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <h1>Hello, I'm <span>Your Name</span></h1>
-        <p>A Web Developer</p>
-        <button onclick="scrollToSection('projects')">View My Work</button>
+    <!-- Home Section -->
+    <section id="home">
+        <h1>Hello, I'm <span>Samruddhi</span></h1>
+        <p>AIML Student | Web Developer</p>
+        <button onclick="scrollToSection('contact')">Hire Me</button>
     </section>
 
-    <!-- About -->
+    <!-- About Section -->
     <section id="about">
         <h2>About Me</h2>
-        <p>I am a passionate developer who loves building websites and apps.</p>
+        <p>
+            I am a passionate AIML student interested in web development,
+            AI projects, and innovative solutions.
+        </p>
     </section>
 
-    <!-- Projects -->
+    <!-- Projects Section -->
     <section id="projects">
         <h2>My Projects</h2>
 
         <div class="project-card">
-            <h3>Project 1</h3>
-            <p>Short description of your project.</p>
+            <h3>Water Management System</h3>
+            <p>IoT-based smart water monitoring project.</p>
         </div>
 
         <div class="project-card">
-            <h3>Project 2</h3>
-            <p>Short description of your project.</p>
+            <h3>Waste Management AI</h3>
+            <p>AI system for waste classification and recycling.</p>
         </div>
 
     </section>
 
-    <!-- Contact -->
+    <!-- Contact Section -->
     <section id="contact">
         <h2>Contact Me</h2>
-        <form onsubmit="handleSubmit(event)">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Message"></textarea>
-            <button type="submit">Send</button>
-        </form>
-        <p id="formMessage"></p>
+        <input type="text" placeholder="Your Name" id="name">
+        <input type="email" placeholder="Your Email" id="email">
+        <textarea placeholder="Your Message" id="message"></textarea>
+        <button onclick="sendMessage()">Send</button>
     </section>
 
     <script src="script.js"></script>
